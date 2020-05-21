@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		756F9E2E2476666900D967D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756F9E2C2476666900D967D1 /* Main.storyboard */; };
 		756F9E302476666B00D967D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756F9E2F2476666B00D967D1 /* Assets.xcassets */; };
 		756F9E332476666B00D967D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756F9E312476666B00D967D1 /* LaunchScreen.storyboard */; };
+		9414C10F40FBAC17C461FE35 /* libPods-MapTracePoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B271FFCF9DC5F4620925EE /* libPods-MapTracePoc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0A6990FE9EDB637D11C100 /* Pods-MapTracePoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTracePoc.release.xcconfig"; path = "Target Support Files/Pods-MapTracePoc/Pods-MapTracePoc.release.xcconfig"; sourceTree = "<group>"; };
+		3D259E6338E86BFC1C62212C /* Pods-MapTracePoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTracePoc.debug.xcconfig"; path = "Target Support Files/Pods-MapTracePoc/Pods-MapTracePoc.debug.xcconfig"; sourceTree = "<group>"; };
 		756F9E232476666900D967D1 /* MapTracePoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTracePoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756F9E262476666900D967D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		756F9E282476666900D967D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		756F9E2F2476666B00D967D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		756F9E322476666B00D967D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		756F9E342476666B00D967D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		756F9E3A247677AD00D967D1 /* MapTracePoc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapTracePoc-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8B271FFCF9DC5F4620925EE /* libPods-MapTracePoc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapTracePoc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9414C10F40FBAC17C461FE35 /* libPods-MapTracePoc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC2321DCAEC278B4013DFC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8B271FFCF9DC5F4620925EE /* libPods-MapTracePoc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		756F9E1A2476666900D967D1 = {
 			isa = PBXGroup;
 			children = (
 				756F9E252476666900D967D1 /* MapTracePoc */,
 				756F9E242476666900D967D1 /* Products */,
+				F3E56ED6AFD6868E86BD0737 /* Pods */,
+				5CC2321DCAEC278B4013DFC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +79,18 @@
 				756F9E2F2476666B00D967D1 /* Assets.xcassets */,
 				756F9E312476666B00D967D1 /* LaunchScreen.storyboard */,
 				756F9E342476666B00D967D1 /* Info.plist */,
+				756F9E3A247677AD00D967D1 /* MapTracePoc-Bridging-Header.h */,
 			);
 			path = MapTracePoc;
+			sourceTree = "<group>";
+		};
+		F3E56ED6AFD6868E86BD0737 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D259E6338E86BFC1C62212C /* Pods-MapTracePoc.debug.xcconfig */,
+				3D0A6990FE9EDB637D11C100 /* Pods-MapTracePoc.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 756F9E372476666B00D967D1 /* Build configuration list for PBXNativeTarget "MapTracePoc" */;
 			buildPhases = (
+				B08C2906B588E4D960E0978A /* [CP] Check Pods Manifest.lock */,
 				756F9E1F2476666900D967D1 /* Sources */,
 				756F9E202476666900D967D1 /* Frameworks */,
 				756F9E212476666900D967D1 /* Resources */,
+				5F310A153C5776FCBEEF4A74 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F310A153C5776FCBEEF4A74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapTracePoc/Pods-MapTracePoc-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapTracePoc/Pods-MapTracePoc-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapTracePoc/Pods-MapTracePoc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B08C2906B588E4D960E0978A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapTracePoc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		756F9E1F2476666900D967D1 /* Sources */ = {
@@ -282,16 +352,19 @@
 		};
 		756F9E382476666B00D967D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D259E6338E86BFC1C62212C /* Pods-MapTracePoc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TL6HHXQR9;
 				INFOPLIST_FILE = MapTracePoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.perficient.baidumap.tracepoc.MapTracePoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perficient.baidumap.tracepoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MapTracePoc/MapTracePoc-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,16 +372,19 @@
 		};
 		756F9E392476666B00D967D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0A6990FE9EDB637D11C100 /* Pods-MapTracePoc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TL6HHXQR9;
 				INFOPLIST_FILE = MapTracePoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.perficient.baidumap.tracepoc.MapTracePoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perficient.baidumap.tracepoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MapTracePoc/MapTracePoc-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

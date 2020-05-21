@@ -1,0 +1,16 @@
+PODS:
+  - BaiduMapKit (5.3.0)
+
+DEPENDENCIES:
+  - BaiduMapKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BaiduMapKit
+
+SPEC CHECKSUMS:
+  BaiduMapKit: 4f27a2d4bf52ba79ee51908d14bdcb1c7cbecb7e
+
+PODFILE CHECKSUM: 9b96faf2f13d2e4185421a9743dbe1e1d2f6a409
+
+COCOAPODS: 1.9.1

@@ -8,11 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, BMKMapViewDelegate {
 
+    var mapView: BMKMapView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        mapView = BMKMapView(frame: self.view.frame)
+        mapView?.delegate = self
+        self.view.addSubview(mapView!);
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mapView?.viewWillAppear()
+        mapView?.zoomLevel = 17
+        mapView?.mapType = BMKMapType.standard
+        mapView?.setCenter(CLLocationCoordinate2DMake(, <#T##longitude: CLLocationDegrees##CLLocationDegrees#>), animated: <#T##Bool#>)
+    }
+        
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        mapView?.viewWillDisappear()
     }
 
 
