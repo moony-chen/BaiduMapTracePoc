@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		755B41C92478C71300939C30 /* MyLocalSyncTileLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B41C82478C71300939C30 /* MyLocalSyncTileLayer.swift */; };
 		756F9E272476666900D967D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F9E262476666900D967D1 /* AppDelegate.swift */; };
 		756F9E292476666900D967D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F9E282476666900D967D1 /* SceneDelegate.swift */; };
 		756F9E2B2476666900D967D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F9E2A2476666900D967D1 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		3D0A6990FE9EDB637D11C100 /* Pods-MapTracePoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTracePoc.release.xcconfig"; path = "Target Support Files/Pods-MapTracePoc/Pods-MapTracePoc.release.xcconfig"; sourceTree = "<group>"; };
 		3D259E6338E86BFC1C62212C /* Pods-MapTracePoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTracePoc.debug.xcconfig"; path = "Target Support Files/Pods-MapTracePoc/Pods-MapTracePoc.debug.xcconfig"; sourceTree = "<group>"; };
+		755B41C82478C71300939C30 /* MyLocalSyncTileLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocalSyncTileLayer.swift; sourceTree = "<group>"; };
 		756F9E232476666900D967D1 /* MapTracePoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTracePoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756F9E262476666900D967D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		756F9E282476666900D967D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				756F9E312476666B00D967D1 /* LaunchScreen.storyboard */,
 				756F9E342476666B00D967D1 /* Info.plist */,
 				756F9E3A247677AD00D967D1 /* MapTracePoc-Bridging-Header.h */,
+				755B41C82478C71300939C30 /* MyLocalSyncTileLayer.swift */,
 			);
 			path = MapTracePoc;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				756F9E2B2476666900D967D1 /* ViewController.swift in Sources */,
 				756F9E272476666900D967D1 /* AppDelegate.swift in Sources */,
+				755B41C92478C71300939C30 /* MyLocalSyncTileLayer.swift in Sources */,
 				756F9E292476666900D967D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

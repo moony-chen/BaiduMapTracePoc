@@ -22,14 +22,30 @@ class ViewController: UIViewController, BMKMapViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         mapView?.viewWillAppear()
-        mapView?.zoomLevel = 17
+        mapView?.zoomLevel = 20
         mapView?.mapType = BMKMapType.standard
-        mapView?.setCenter(CLLocationCoordinate2DMake(, <#T##longitude: CLLocationDegrees##CLLocationDegrees#>), animated: <#T##Bool#>)
+        mapView?.setCenter(CLLocationCoordinate2DMake(30.207811, 120.220744), animated: true)
+        
+        let syncTile = MyLocalSyncTileLayer()
+        syncTile.maxZoom = 21;
+        //syncTile的最小Zoom值，默认3
+        syncTile.minZoom = 20;
+        mapView?.add(syncTile)
+        
     }
         
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         mapView?.viewWillDisappear()
+    }
+    
+    //MARK:BMKMapViewDelegate
+    func mapView(_ mapView: BMKMapView!, viewFor overlay: BMKOverlay!) -> BMKOverlayView! {
+        if overlay .isKind(of: BMKTileLayer.self) {
+            let view: BMKTileLayerView = BMKTileLayerView.init(tileLayer: overlay as? BMKTileLayer)
+            return view
+        }
+        return nil
     }
 
 
