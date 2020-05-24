@@ -28,7 +28,6 @@ class ViewController: UIViewController, BMKMapViewDelegate {
         mapView?.showMapPoi = false
         
         let syncTile = MyLocalSyncTileLayer()
-//        syncTile.visibleMapRect = BMKMapRectMake(<#T##x: Double##Double#>, <#T##y: Double##Double#>, <#T##width: Double##Double#>, <#T##height: Double##Double#>)
         syncTile.maxZoom = 21;
         //syncTile的最小Zoom值，默认3
         syncTile.minZoom = 20;

@@ -16,7 +16,7 @@ class MyLocalSyncTileLayer: BMKSyncTileLayer {
         if let image: UIImage = UIImage(named: imageName) {
             return image
         } else {
-            return nil
+            return UIImage(named: "pft_tile_default")
         }
     }
 
